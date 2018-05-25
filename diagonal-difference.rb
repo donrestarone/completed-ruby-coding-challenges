@@ -7,7 +7,10 @@ def diagonalDifference(a)
   array = a
 
   array.each_with_index do |num, position|
-
+    puts "="*10
+    puts position
+    puts sub_array_size
+    puts "="*10
     if position < sub_array_size
       first_row.push num
     elsif position < (sub_array_size * 2)
@@ -31,3 +34,6 @@ array1 = [3, 12, 3, 5, 5, 6, 7, 11, 9, -13]
 array2 = [4, 12, 3, 5, 5, 6, 7, 11, 9, -13, 3, 2, 9]
 
 p diagonalDifference(array)
+
+
+[[11, 2, 4], [4, 5, 6], [10, 8, -12]]
