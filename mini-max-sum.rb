@@ -3,6 +3,7 @@ stripped = input.gsub(/\s+/, "")
 
 input = stripped.split('').map {|s| s.to_i}
 input.sort! {|a,b| a <=> b}
+p input
 pop_count = input.length - 1
 min_counter = 0
 max_counter = 0
