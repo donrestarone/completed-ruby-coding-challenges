@@ -1,7 +1,8 @@
 sample_input = [4, 73, 67, 38, 33]
 sample_output = []
 fails = []
-sample_input.each do |num|
+test_case = Array (1..100)
+test_case.each do |num|
 	if num + 1 > 40 || num + 2 >= 40
 		if (num + 1) % 5 == 0
 			rounded = (num + 2) / 5.round * 5
@@ -12,7 +13,6 @@ sample_input.each do |num|
 		else 
 			sample_output.push(num)
 		end
-
 	else 
 		fails.push(num)
 	end
@@ -20,3 +20,7 @@ end
 
 p sample_output
 p fails
+
+
+
+# p test_case
